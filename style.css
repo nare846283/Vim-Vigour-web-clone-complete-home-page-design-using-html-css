@@ -1,0 +1,379 @@
+@font-face {
+    font-family: fontfirst;
+    src: url(fonts/b9ce9aa7-8898-48a1-9ff9-480158287708.woff2);
+}
+
+@font-face {
+    font-family: fontsecond;
+    src: url(fonts/da9990b8-32d9-4402-86e8-bec78e679403.woff2);
+}
+
+@font-face {
+    font-family: fontthird;
+    src: url(fonts/fontawesome-webfont.woff2);
+}
+
+@font-face {
+    font-family: fontfour;
+    src: url(fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+main header{
+    z-index: 1;
+    background-image: url(images/vim-and-vigour-hero-2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    position: fixed;
+}
+
+main nav{
+    box-shadow: 0, 0, 50px, rgb(255, 255, 255);
+    z-index: 999;
+    position: fixed;
+    padding: 20px;
+    gap: 5px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+main nav i{
+    padding: 10px 16px ;
+    background-color: #222222;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    box-shadow: -1px 0px 9px 2px rgba(61, 61, 61, 0.74);
+}
+
+main nav i:hover{
+    cursor: pointer;
+}
+
+section{
+    z-index: 99;
+    font-family: fontfirst;
+    color: #ffffff;
+    position: absolute;
+    margin-top: 70vh;
+    width: 100%;
+    height: auto;
+    background-color: #313033;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .title{
+    /* background-color: #ffffff; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+}
+
+section .title::before{
+    content: "";
+    width: 1px;
+    height: 100px;
+    background-color: #ffffff;
+    margin-top: -50px;
+}
+
+section .title h1{
+    margin-top: 30px;
+    margin-bottom: 35px;
+    font-size: 2.118rem;
+    line-height: 2.706rem;
+    letter-spacing: 1px;
+    font-family: fontfour;
+}
+
+section .title ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+}
+
+section .title ul li a{
+    font-family: fontfirst;
+    font-weight: 600;
+    font-size: .7rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+section .desc{
+    margin-top: 30px;
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+section p{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    height: fit-content;
+}
+
+section .packing-img{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+}
+
+section .packing-img img{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section #third-img img{
+    width: 70%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+/* footer area start */
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #222222;
+}
+
+/* footer first area start */
+
+.footer .first-ft{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .first-ft .left{
+    width: 50%;
+    height: 100%;
+    background-image: url(images/ft-left-img.png);
+    background-size: cover;
+    position: relative;
+}
+
+.footer .first-ft .left .overlay{
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+}
+
+.footer .first-ft .left .overlay a{
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #ffffff;
+    flex-direction: column;
+    text-decoration: none;
+    background: #2b2b2b;
+}
+
+.footer .first-ft .left .overlay a:hover{
+    background: rgba(61, 61, 61, 0.651);
+    transition: all 0.6s ease-in-out ;
+}
+
+
+.footer .first-ft .left .overlay a h1{
+    font-size: 36px;
+    font-weight: 800;
+    font-family: fontthird;
+    letter-spacing: 1px;
+}
+
+.footer .first-ft .left .overlay a p{
+    font-size: 17px;
+    font-weight: 800;
+    font-family: fontsecond;
+    letter-spacing: 1px;
+}
+
+.footer .first-ft .right{
+    width: 50%;
+    height: 100%;
+    background-image: url(images/ft-right-img.jpg);
+    background-size: cover;
+}
+
+.footer .first-ft .right .overlay{
+    position: absolute;
+    width: 50%;
+    height: 50vh;
+}
+
+ .footer .first-ft .right .overlay a{
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-direction: column;
+    text-decoration: none;
+    background: #222222;
+    text-align: center;
+}
+
+.footer .first-ft .right .overlay a:hover{
+    background: rgba(61, 61, 61, 0.651);
+    transition: all 0.6s ease-in-out ;
+}
+
+.footer .first-ft .right .overlay a h1{
+    font-size: 32px;
+    font-weight: 800;
+    font-family: fontthird;
+    letter-spacing: 1px;
+}
+
+.footer .first-ft .right .overlay a p{
+    font-size: 14px;
+    font-weight: 800;
+    font-family: fontthird;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* footer first area end */
+
+
+/* footer second area start */
+
+.footer .second-ft{
+    width: 100%;
+    height: 50vh;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .second-ft> .left, .middle, .right{
+    width: calc(100% / 3);
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .second-ft .middle{
+    padding: 100px;
+    
+}
+
+.footer .second-ft ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+
+.footer .second-ft ul li{
+    list-style-type: none;
+    
+}
+
+.footer .second-ft ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: fontsecond;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+
+/* fooetr second area end */
+
+/* footer third area start */
+.footer .third-ft{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url(images/Matchbox-Voice-Image.jpg);
+    background-size: cover;
+    background-position-y: -80px;
+
+}
+
+.footer .third-ft .ft-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .third-ft .ft-overlay h5{
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: fontsecond;
+    letter-spacing: 3px;
+    
+}
+
+.footer .third-ft .ft-overlay h2{
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-family: fontthird;
+}
+
+/* footer area end */
